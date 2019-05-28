@@ -1,0 +1,102 @@
+<% var data = { title: "Контакты", author: "Modus" }; %>
+<%=_.template(require('./../includes/header.html'))(data) %>
+<div class="wrapper catalog contacts">
+    <div class="l_container  contacts_container">
+        <h2 class="text_header_all">Контакты</h2>
+        <div class="containter_info_contacts">
+            <div>
+                <div class="text_all_contact">Менеджеры по розничным продажам:</div>
+                <div>
+                    <div class="image_contact">
+                        <img src="./img/image_persona.png" alt="Картинка" class="img_responsive">
+                    </div>
+                    <div class="name_contact">Кристина Булгакова</div>
+                    <div class="number_contact">
+                        <div class="d_flex">
+                            <div class="image_phone">
+                                <img src="./img/svg/call_modus.svg" alt="Картинка">
+                            </div>
+                            <div class="number_text_contact"><a href="tel:#">+38 (050) 866-58-88</a></div>
+                        </div>
+                        <div class="d_flex">
+                            <div class="image_phone">
+                                <img src="./img/svg/call_modus.svg" alt="Картинка">
+                            </div>
+                            <div class="number_text_contact"><a href="tel:#">+38 (050) 866-58-88</a></div>
+                        </div>
+                        <div class="d_flex">
+                            <div class="image_phone">
+                                <img src="./img/svg/call_modus.svg" alt="Картинка">
+                            </div>
+                            <div class="number_text_contact"><a href="tel:#">+38 (050) 866-58-88</a></div>
+                            <div class="social_contacts d_flex">
+                                <div class="image_phone">
+                                    <img src="./img/svg/whatsapp_modus.svg" alt="Картинка">
+                                </div>
+                                <div class="image_phone">
+                                    <img src="./img/svg/vibe_modus.svg" alt="Картинка">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="image_contact">
+                        <img src="./img/image_person2.png" alt="Картинка" class="img_responsive">
+                    </div>
+                    <div class="name_contact">Инна Бесидовская</div>
+                    <div class="number_contact">
+                        <div class="d_flex">
+                            <div class="image_phone">
+                                <img src="./img/svg/instagram_modus.svg" alt="Картинка">
+                            </div>
+                            <div class="number_text_contact"><a href="#">modus_vivendi_tm</a></div>
+                        </div>
+                        <div class="d_flex">
+                            <div class="image_phone">
+                                <img src="./img/svg/email_modus.svg" alt="Картинка">
+                            </div>
+                            <div class="number_text_contact"><a href="#">bulgakova@modus-vivendi.ua</a></div>
+                        </div>
+                        <div class="d_flex">
+                            <div class="image_phone">
+                                <img src="./img/svg/skype_modus.svg" alt="Картинка">
+                            </div>
+                            <div class="number_text_contact"><a href="#">besidovskaya_ia</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="container_contact_time">
+                    <span>Режим работы:</span><br>
+                    пн-пт - 9:00 - 17:00,<br>
+                    сб - 9:00 - 15:00,<br>
+                    вс - выходной
+                </p>
+                <form class="forms_contact">
+                    <div>
+                        <label for="">Ваше имя</label>
+                        <input type="text" placeholder="Евгения" />
+                    </div>
+                    
+                    <div>
+                        <label for="">Фамилия</label>
+                        <input type="text" placeholder="Гавриш" />
+                    </div>
+
+                    <div>
+                        <label for="">Телефон</label>
+                        <input type="telephone" class="phone_number" placeholder="+38 (095) 315 89 79" />
+                    </div>
+                    <div class="text_area_new">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+                    </div>
+                    <!-- ПОПАП  В ФУТЕРЕ КЛАСС pop_up send_pop -->
+                    <button class="all_button">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<%= _.template(require('./../includes/footer.html'))(data) %>

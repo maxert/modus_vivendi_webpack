@@ -1,0 +1,46 @@
+<% var data = { title: "Блог", author: "Modus" }; %>
+<%=_.template(require('./../includes/header.html'))(data) %>
+<div class="wrapper catalog blogs">
+    <div class="l_container lookbook_container blogs_container">
+        <h2 class="text_header_all">Блог</h2>
+        <div class="tabs_blogs_header d_flex">
+            <div><span>Уход за обувью</span></div>
+            <div class="active"><span>Секреты шоппинга</span></div>
+        </div>
+        <div class="container_blogs_tabs">
+            <div>
+
+            </div>
+            <div class="active">
+                <div>
+                    <img src="./img/blogs_image.png" alt="Картинка" class="img_responsive">
+                    <div class="text_header_blogs">Модные мелочи: шапки</div>
+                    <div class="text_info_blogs">При всей нашей любви к обуви, очевидно, что для создания целостного
+                        образа, важны и другие аксессуары. Даже дети знают, что Winter is coming, поэтому сегодня мы
+                        поговорим о головных уборах.</div>
+                    <div class="data">16.10.2017</div>
+                </div>
+                <div>
+                    <img src="./img/blogs_image2.png" alt="Картинка" class="img_responsive">
+                    <div class="text_header_blogs">Как не надо: антитренды сезона
+                        осень-зима 2017-18</div>
+                    <div class="text_info_blogs">В последние годы изменчивость моды ощутима, как никогда. Мы едва
+                        успеваем угнаться за актуальными тенденциями, а желанные новинки превращаются в вещи «нон грата»
+                        буквально на наших глазах. Почему же это происходит?
+                    </div>
+                    <div class="data">04.09.2017</div>
+                </div>
+                <div>
+                    <img src="./img/blogs_image3.png" alt="Картинка" class="img_responsive">
+                    <div class="text_header_blogs">Удачная покупка: секреты онлайн-
+                        шоппинга</div>
+                    <div class="text_info_blogs">Как часто, поддавшись сиюминутному настроению, мы совершаем
+                        импульсивные приобретения, о которых начинаем жалеть практически сразу. </div>
+                    <div class="data">24.03.2017</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<%= _.template(require('./../includes/footer.html'))(data) %>

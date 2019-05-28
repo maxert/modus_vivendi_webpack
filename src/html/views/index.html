@@ -1,0 +1,160 @@
+<% var data = { title: "Главная", author: "Modus" }; %>
+<%=
+_.template(require('./../includes/header.html'))(data) %>
+<div class="start_container">
+	<section class="one_section">
+		<div class="block_mainSlider">
+			<div class="main__slider__wrap d_flex">
+				<div class="main__slider">
+					<div class="main__slider--item">
+						<img src="./img/slid2.jpg" alt="Картинка" />
+						<div class="info_text_slider">
+							<div class="header_text">
+								<div>Коллекция весна - лето</div>
+								<div class="size_text">2019</div>
+							</div>
+							<div class="center_text">
+								Женская обувь от производителя
+							</div>
+							<button class="all_button">
+								Начать шопинг
+							</button>
+						</div>
+					</div>
+
+					<div class="main__slider--item">
+						<img src="./img/slid2.jpg" alt="Картинка" />
+						<div class="info_text_slider">
+							<div class="header_text">
+								<div>Коллекция весна - лето</div>
+								<div class="size_text">2019</div>
+							</div>
+							<div class="center_text">
+								Женская обувь от производителя
+							</div>
+							<button class="all_button">
+								Начать шопинг
+							</button>
+						</div>
+					</div>
+
+					<div class="main__slider--item">
+						<img src="./img/slid2.jpg" alt="Картинка" />
+						<div class="info_text_slider">
+							<div class="header_text">
+								<div>Коллекция весна - лето</div>
+								<div class="size_text">2019</div>
+							</div>
+							<div class="center_text">
+								Женская обувь от производителя
+							</div>
+							<button class="all_button">
+								Начать шопинг
+							</button>
+						</div>
+					</div>
+
+					<div class="main__slider--item">
+						<img src="./img/slid2.jpg" alt="Картинка" />
+						<div class="info_text_slider">
+							<div class="header_text">
+								<div>Коллекция весна - лето</div>
+								<div class="size_text">2019</div>
+							</div>
+							<div class="center_text">
+								Женская обувь от производителя
+							</div>
+							<button class="all_button">
+								Начать шопинг
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="main__slider2">
+					<div class="main__slider--item">
+						<img src="./img/slid2.jpg" alt="Картинка" />
+						<div class="info_text_slider">
+							<div class="header_text">
+								<div>Коллекция весна - лето</div>
+								<div class="size_text">2019</div>
+							</div>
+							<div class="center_text">
+								Женская обувь от производителя
+							</div>
+							<button class="all_button">
+								Начать шопинг
+							</button>
+						</div>
+					</div>
+
+					<div class="main__slider--item">
+						<img src="./img/slid2.jpg" alt="Картинка" />
+						<div class="info_text_slider">
+							<div class="header_text">
+								<div>Коллекция весна - лето</div>
+								<div class="size_text">2019</div>
+							</div>
+							<div class="center_text">
+								Женская обувь от производителя
+							</div>
+							<button class="all_button">
+								Начать шопинг
+							</button>
+						</div>
+					</div>
+
+					<div class="main__slider--item">
+						<img src="./img/slid2.jpg" alt="Картинка" />
+						<div class="info_text_slider">
+							<div class="header_text">
+								<div>Коллекция весна - лето</div>
+								<div class="size_text">2019</div>
+							</div>
+							<div class="center_text">
+								Женская обувь от производителя
+							</div>
+							<button class="all_button">
+								Начать шопинг
+							</button>
+						</div>
+					</div>
+
+					<div class="main__slider--item">
+						<img src="./img/slid2.jpg" alt="Картинка" />
+						<div class="info_text_slider">
+							<div class="header_text">
+								<div>Коллекция весна - лето</div>
+								<div class="size_text">2019</div>
+							</div>
+							<div class="center_text">
+								Женская обувь от производителя
+							</div>
+							<button class="all_button">
+								Начать шопинг
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="button_slider">
+			<button class="next_slide">
+				<img src="./img/arrow.png" alt="Картинка" />
+			</button>
+			<button class="prev_slide">
+				<img src="./img/arrow.png" alt="Картинка" />
+			</button>
+		</div>
+	</section>
+	<section class="two_section" id="black_menu">
+		<%= _.template(require('./../includes/sectiontwo.html'))(data) %>
+	</section>
+	<section class="three_section">
+		<%= _.template(require('./../includes/sectionthree.html'))(data) %>
+	</section>
+	<section class="four_section">
+		<%= _.template(require('./../includes/sectionfour.html'))(data) %>
+	</section>
+</div>
+<%= _.template(require('./../includes/footer.html'))(data) %>

@@ -1,0 +1,243 @@
+@media screen and (max-width: 1850px) {
+    .contacts_container>.text_header_all {
+        margin-top: 60px;
+    }
+
+    .text_all_contact {
+        font-size: 20px;
+    }
+
+    .containter_info_contacts {
+        grid-template-columns: 600px 1fr;
+        grid-column-gap: 60px;
+    }
+
+    .text_all_contact {
+        margin-bottom: 35px;
+    }
+
+    .image_contact {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 53px !important;
+    }
+
+    .containter_info_contacts>div {
+        grid-column-gap: 60px;
+    }
+
+    .image_phone {
+        width: 20px;
+        height: 20px;
+    }
+
+    .number_contact>div {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    .name_contact {
+        margin-bottom: 30px;
+    }
+
+    .container_contact_time {
+        font-size: 18px;
+    }
+
+    .container_contact_time span {
+        font-size: 20px;
+    }
+
+    .forms_contact>div label {
+        font-size: 13px;
+    }
+
+    .forms_contact>div input {
+        height: 40px;
+        padding-top: inherit;
+        font-size: 14px;
+        padding-left: 15px;
+    }
+
+    .forms_contact {
+        grid-column-gap: 30px;
+        grid-row-gap: 20px;
+    }
+
+    .text_area_new textarea {
+        font-size: 14px;
+        height: 125px;
+    }
+
+    .text_area_new {
+        margin-top: 10px
+    }
+
+    .social_contacts>div {
+        margin-left: 10px;
+    }
+
+    .forms_contact button {
+        margin-top: 10px;
+    }
+
+    .container_contact_time {
+        margin-bottom: 45px;
+        line-height: 27px;
+    }
+
+    .containter_info_contacts {
+        margin-bottom: 60px;
+    }
+
+    .row_container_about p,
+    .text_about {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .row_container_about p span {
+        font-size: 16px;
+    }
+    .image_about img{
+        max-width: 105px;
+    }
+    .container_info_about{
+        grid-column-gap: 60px;
+        grid-row-gap: 45px;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .containter_info_contacts {
+        grid-template-columns: 652px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .container_contact_time {
+        grid-column-start: span 2;
+        grid-row-start: 1;
+        margin-bottom: 30px;
+    }
+
+    .contacts_container>.text_header_all {
+        margin-bottom: 45px;
+    }
+
+    .name_contact {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .containter_info_contacts>div:nth-child(1) {
+        margin-bottom: 60px;
+    }
+
+    .text_all_contact {
+        font-size: 16px;
+    }
+
+    .image_contact {
+        margin-bottom: 30px !important;
+    }
+    .text_about{
+        grid-column: span 2;
+    }
+    .container_info_about{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+@media screen and (max-width:980px){
+    .row_container_about p span{
+        font-size: 14px;
+    }
+    .row_container_about p, .text_about{
+        font-size: 13px;
+       
+    }
+    .container_info_about{
+        grid-column-gap: 33px;
+        grid-row-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+   
+    .containter_info_contacts>div {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-row-gap: 30px;
+    }
+
+    .contacts_container>.text_header_all {
+        margin-bottom: 20px;
+    }
+
+    .containter_info_contacts {
+        grid-template-columns: 280px;
+    }
+
+    .container_contact_time {
+        grid-column-start: 1;
+        margin-bottom: 0px;
+    }
+
+    .text_all_contact {
+        grid-column-start: 1;
+    }
+
+    .containter_info_contacts>div:nth-child(1)>div {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-bottom: 0px;
+    }
+
+    .text_all_contact {
+        font-size: 14px;
+    }
+
+    .forms_contact {
+        grid-template-columns: 1fr;
+    }
+
+    .forms_contact {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .forms_contact>div {
+        margin-bottom: 20px;
+    }
+
+    .text_area_new textarea {
+        height: 100px;
+    }
+
+    .forms_contact button {
+        width: 255px;
+    }
+
+    .containter_info_contacts {
+        margin-bottom: 40px;
+    }
+    .text_about{
+        grid-column: span 1;
+    }
+    .container_info_about{
+        grid-template-columns: 1fr;
+    }
+    .l_container.about_container
+    {
+        padding: 0 20px!important;
+    }
+}

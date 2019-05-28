@@ -1,0 +1,133 @@
+.container_inforamtion_action {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+}
+
+.l_container.action_container {
+    max-width: 1700px;
+}
+
+.text_header_action {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+
+.text_info_action {
+    font-weight: 300;
+}
+
+.bottom_action_info {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 300;
+}
+
+.bottom_action_info .text_header_action {
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.center_text_action {
+    padding-left: 20px;
+}
+
+.feadback_action {
+    margin-bottom: 100px;
+    max-width: 950px;
+    margin-top: 60px;
+}
+
+.text_info_action {
+    max-width: 785px;
+}
+
+/*Blogs*/
+
+.container_blogs_tabs>div img {
+    margin-bottom: 45px;
+}
+
+.text_header_blogs {
+    height: 50px;
+    margin-bottom: 30px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    max-width: 378px;
+}
+
+.container_blogs_tabs>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 75px;
+}
+
+.tabs_blogs_header>div:nth-child(n+1) {
+    margin-right: 45px;
+}
+
+.tabs_blogs_header>div {
+    position: relative;
+    cursor: pointer;
+}
+
+.tabs_blogs_header>div.active>span {
+    position: relative;
+}
+
+.tabs_blogs_header>div.active>span::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #1527b2;
+    bottom: -14px;
+}
+
+.tabs_blogs_header {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 75px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 17px;
+}
+
+.container_blogs_tabs {
+    margin-bottom: 100px;
+}
+
+.text_info_blogs {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    margin-bottom: 30px;
+}
+
+.data {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+.container_blogs_tabs>div {
+    display: none;
+
+}
+
+.container_blogs_tabs>div.active {
+    display: grid;
+
+}

@@ -1,0 +1,263 @@
+<% var data = { title: "Личный кабинет", author: "Modus" }; %>
+<%=_.template(require('./../includes/header.html'))(data) %>
+<div class="wrapper catalog blogs">
+    <div class="l_container lookbook_container personal_container">
+        <h2 class="text_header_all">Личный кабинет</h2>
+        <div class="header_personalarea d_flex">
+            <div class="tabs_blogs_header d_flex">
+                <div class="active"><span>Контактная информация</span></div>
+                <div><span>Адресная книга</span></div>
+                <div><span>Список желаний</span></div>
+                <div><span>История заказов</span></div>
+            </div>
+            <div class="close_personal"><a href="#">Выход</a></div>
+        </div>
+        <div class="container_blogs_tabs">
+            <div class="active">
+                <form action="#" class="password_container_info">
+                    <div class="container_personal_info">
+                        <p class="top_text_personal">Редактирование личных данных</p>
+                        <div>
+                            <label for="">Ваше имя</label>
+                            <input type="text" placeholder="Евгения" />
+                        </div>
+                        <div>
+                            <label for="">Дата рождения</label>
+                            <input id="datapicker" type="data" placeholder="16.12.1997"  data-position='top left'/>
+                        </div>
+                        <div>
+                            <label for="">Фамилия</label>
+                            <input type="text" placeholder="Гавриш" />
+                        </div>
+                        <div>
+                            <label for="">Телефон</label>
+                            <input type="text" name="telephone" class="phone_number" placeholder="+38(095) 315 89 79" />
+                        </div>
+                        <div>
+                            <label for="">E-mail</label>
+                            <input type="email" name="email" placeholder="evgeniya.gavrysh@gmail.com" />
+                        </div>
+                    </div>
+                    <div class="password_container">
+                        <p class="top_text_personal">Изменение пароля</p>
+                        <div>
+                            <label for="">Старый пароль</label>
+                            <input type="text" name="password_old" />
+                        </div>
+                        <div>
+                            <label for="">Новый пароль</label>
+                            <input type="text" name="new_password" />
+                        </div>
+                        <div>
+                            <label for="">Подтверждение пароля</label>
+                            <input type="text" name="passwod_select" />
+                        </div>
+                        <button type="submit" class="all_button">Сохранить</button>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <form action="#" class="edit_container">
+                    <div class="container_addres_save">
+                        <p class="top_text_personal">Редактирование адреса</p>
+                        <div>
+                            <label>Телефон</label>
+                            <input type="text" name="phone" class="phone_number" placeholder="+38 (095) 315 89 79" />
+                        </div>
+                        <div>
+                            <label>Город</label>
+                            <input type="text" placeholder="Харьков" />
+                        </div>
+                        <div>
+                            <label>Улица</label>
+                            <input type="text" placeholder="Сумская" />
+                        </div>
+                        <div class="container_row">
+                            <div>
+                                <label for="">Дом</label>
+                                <input type="text" placeholder="13" />
+                            </div>
+                            <div>
+                                <label for="">Квартира</label>
+                                <input type="text" name="house" placeholder="13" />
+                            </div>
+                            <div>
+                                <label for="">Индекс</label>
+                                <input type="text" name="index" placeholder="62364" />
+                            </div>
+                        </div>
+                        <button class="all_button">Сохранить</button>
+                    </div>
+                    <div class="info_users">
+                        <p class="top_text_personal">Евгения Гавриш</p>
+                        <p> ул. Сумская 13, 13
+                            62364 Харьков
+                            тел. 0953158979</p>
+                    </div>
+
+                </form>
+            </div>
+            <div>
+                <p class="top_text_personal">Категория</p>
+                <div class="container_items_buy container_category">
+                    <div class="items_product_basket d_flex">
+                        <div class="text_category"><a href="#">
+                                Кроссовки
+                            </a></div>
+                        <div class="image_product_info">
+                            <img src="./img/product_image.png" alt="Картинка">
+                            <div class="text_title_product">
+                                <div>Белые кроссовки из натуральной
+                                    кожи из Европы </div>
+                                <div>Артикул: <span> 562204</span></div>
+                                <div class="d_flex a_items_center">
+                                    <div class="price_basket">
+                                        Цена:<span>2 125 грн.</span>
+                                    </div>
+                                    <div> <a href="">Есть в наличии</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info_product_my">
+                            <button class="all_button">Купить</button>
+                            <div class="conditions">
+                                <input type="checkbox" id="send_me_sale">
+                                <label for="send_me_sale">Уведомить о наличии</label>
+                            </div>
+                            <a href="#">Удалить</a>
+                        </div>
+                    </div>
+                    <div class="items_product_basket d_flex">
+                        <div class="text_category"><a href="#">
+                                Кроссовки
+                            </a></div>
+                        <div class="image_product_info">
+                            <img src="./img/product_image.png" alt="Картинка">
+                            <div class="text_title_product">
+                                <div>Белые кроссовки из натуральной
+                                    кожи из Европы </div>
+                                <div>Артикул: <span> 562204</span></div>
+                                <div class="d_flex a_items_center">
+                                    <div class="price_basket">
+                                        Цена:<span>2 125 грн.</span>
+                                    </div>
+                                    <div> <a href="">Есть в наличии</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info_product_my">
+                            <button class="all_button">Купить</button>
+                            <div class="conditions">
+                                <input type="checkbox" id="send_me_sale">
+                                <label for="send_me_sale">Уведомить о наличии</label>
+                            </div>
+                            <a href="#">Удалить</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bottom_action_info">
+                    <p class="text_header_action"> - Накопительные скидки:</p>
+                    <p class="center_text_action">
+                        3% при накоплении 3000 грн<br>
+                        5% при накоплении 5000 грн<br>
+                        7% при накоплении 7000 грн<br>
+                        10% при накоплении 10000 грн!<br>
+                    </p>
+                    Сумма накопления не аннулируется со временем и едина для всех заказов с вашего аккаунта.<br>
+                    Вы сможете делиться своей скидкой с родственниками и друзьями и… накапливать быстрее!
+                    <p class="text_header_action"> - Информация об акциях и регулярных распродажах до 70% - в первую
+                        очередь
+                        вам!</p>
+                    Вы первыми узнаете о скидках и специальных предложениях, а значит – первыми успеете совершить
+                    выгодную
+                    покупку!
+                    <p class="text_header_action">- Подарочные купоны к праздникам!</p>
+                    И много других приятных сюрпризов от Modus Vivendi!
+                </div>
+            </div>
+            <div>
+                <p class="top_text_personal">Ваши заказы</p>
+                <div class="items_basket_and_info basket_container">
+                    <div class="text_header_items_history d_flex">
+                        <div><span>Заказ №15484043-1010</span>, 22 февраля 12:33</div>
+                        <div class="delivered">Доставлен</div>
+                    </div>
+                    <div class="items_product_basket d_flex">
+                        <div class="image_product_info"><img src="./img/product_image.png" alt="Картинка">
+                            <div class="text_title_product">
+                                <div>Белые кроссовки из натуральной
+                                    кожи из Европы </div>
+                                <div>Артикул: <span> 562204</span></div>
+                            </div>
+                        </div>
+                        <div class="d_flex a_items_center">
+                            <div class="size_basket">36 размер</div>
+                            <div class="number_quality">1 шт.</div>
+                            <div class="price_basket">
+                                Цена:<span>2 125 грн.</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="items_product_basket d_flex">
+                        <div class="image_product_info"><img src="./img/product_image.png" alt="Картинка">
+                            <div class="text_title_product">
+                                <div>Белые кроссовки из натуральной
+                                    кожи из Европы </div>
+                                <div>Артикул: <span> 562204</span></div>
+                            </div>
+                        </div>
+                        <div class="d_flex a_items_center">
+                            <div class="size_basket">36 размер</div>
+                            <div class="number_quality">1 шт.</div>
+                            <div class="price_basket">
+                                Цена:<span>2 125 грн.</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="all_buy">
+                        <ul>
+                            <li>Всего:<span>4 250 грн.</span></li>
+                            <li>Доставка:<span>30 грн.</span></li>
+                            <li>Итого:<span>4 300 грн.</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="items_basket_and_info basket_container">
+                    <div class="text_header_items_history d_flex">
+                        <div><span>Заказ №15484043-1010</span>, 22 февраля 12:33</div>
+                        <div class="delivered delete">Отменен</div>
+                    </div>
+                    <div class="items_product_basket d_flex">
+                        <div class="image_product_info"><img src="./img/product_image.png" alt="Картинка">
+                            <div class="text_title_product">
+                                <div>Белые кроссовки из натуральной
+                                    кожи из Европы </div>
+                                <div>Артикул: <span> 562204</span></div>
+                            </div>
+                        </div>
+                        <div class="d_flex a_items_center">
+                            <div class="size_basket">36 размер</div>
+                            <div class="number_quality">1 шт.</div>
+                            <div class="price_basket">
+                                Цена:<span>2 125 грн.</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="all_buy">
+                        <ul>
+                            <li>Всего:<span>4 250 грн.</span></li>
+                            <li>Доставка:<span>30 грн.</span></li>
+                            <li>Итого:<span>4 300 грн.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<%= _.template(require('./../includes/footer.html'))(data) %>

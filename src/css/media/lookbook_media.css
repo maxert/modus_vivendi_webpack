@@ -1,0 +1,97 @@
+@media screen and (max-width: 1850px) {
+    .lookbook_container>.text_header_all {
+        margin-top: 60px;
+    }
+
+    .l_container.lookbook_container {
+        max-width: 1140px;
+    }
+
+    .text_container_lookbook {
+        font-size: 16px;
+        margin-bottom: 45px;
+    }
+
+    .bottom_text a {
+        font-size: 16px;
+    }
+
+    .bottom_text>p:last-child {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .lookbook_container>.text_header_all {
+        margin-top: 60px;
+    }
+
+    .l_container.lookbook_container {
+        max-width: 860px;
+    }
+
+    .text_container_lookbook {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .bottom_text {
+        left: 20px;
+        bottom: 20px;
+    }
+
+    .bottom_text a {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+    .l_container.lookbook_container {
+        max-width: 640px;
+    }
+
+    .image_container_lookbook {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .text_container_lookbook {
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+
+    .bottom_text a {
+        font-size: 13px;
+    }
+
+    .image_container_lookbook>div:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .l_container.lookbook_container {
+        min-width: 280px;
+    }
+
+    .image_container_lookbook {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .text_container_lookbook {
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+
+    .bottom_text a {
+        font-size: 13px;
+    }
+
+    .image_container_lookbook>div:last-child {
+        display: none;
+    }
+
+    .image_container_lookbook>div:nth-child(n+4) {
+        display: none;
+    }
+}

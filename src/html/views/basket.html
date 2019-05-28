@@ -1,0 +1,57 @@
+<% var data = { title: "Корзина", author: "Modus" }; %>
+<%=_.template(require('./../includes/header.html'))(data) %>
+<div class="wrapper catalog basket">
+    <div class="l_container basket_container">
+        <h2 class="text_header_all">Корзина</h2>
+        <div class="items_basket_and_info ">
+            <div class="items_product_basket d_flex">
+                <div class="image_product_info"><img src="./img/product_image.png" alt="Картинка">
+                    <div class="text_title_product">
+                        <div>Белые кроссовки из натуральной
+                            кожи из Европы </div>
+                        <div>Артикул: <span> 562204</span></div>
+                    </div>
+                </div>
+                <div class="d_flex a_items_center">
+                    <div class="size_basket">36 размер</div>
+                    <div class="number_quality">1 шт.</div>
+                    <div class="price_basket">
+                        Цена:<span>2 125 грн.</span>
+                    </div>
+                </div>
+                <div class="delete_items"><img src="./img/close_image.png" alt="Картинка"></div>
+            </div>
+            <div class="items_product_basket d_flex">
+                <div class="image_product_info"><img src="./img/product_image.png" alt="Картинка">
+                    <div class="text_title_product">
+                        <div>Белые кроссовки из натуральной
+                            кожи из Европы </div>
+                        <div>Артикул: <span> 562204</span></div>
+                    </div>
+                </div>
+                <div class="d_flex a_items_center">
+                    <div class="size_basket">36 размер</div>
+                    <div class="number_quality">1 шт.</div>
+                    <div class="price_basket">
+                        Цена:<span>2 125 грн.</span>
+                    </div>
+                </div>
+                <div class="delete_items"><img src="./img/close_image.png" alt="Картинка"></div>
+            </div>
+        </div>
+        <div class="info_product_buy">
+            <div class="text_info_buy d_flex">
+                <div>Всего товаров:</div>
+                <span>2 шт.</span>
+            </div>
+            <div class="text_info_buy d_flex">
+                <div>Общая стоимость без учета доставки:</div> <span>4 250 грн.</span>
+            </div>
+            <div class="button_buy_product">
+                <div><a href="">Продолжить покупки</a></div>
+                <div class="all_button">Оформить заказ</div>
+            </div>
+        </div>
+    </div>
+</div>
+<%= _.template(require('./../includes/footer.html'))(data) %>

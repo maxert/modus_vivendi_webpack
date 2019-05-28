@@ -1,0 +1,61 @@
+<% var data = { title: "Акции", author: "Modus" }; %>
+<%=_.template(require('./../includes/header.html'))(data) %>
+<div class="wrapper catalog action">
+    <div class="l_container lookbook_container action_container">
+        <h2 class="text_header_all">Акции</h2>
+        <div class="container_inforamtion_action">
+            <div class="row_items">
+                <img src="./img/baner_action.png" alt="Картинка" class="img_responsive">
+                <p class="text_header_action">Получи скидку 15% на покупку новой пары</p>
+                <p class="text_info_action">
+                    Новые модели обуви Modus Vivendi коллекции осень-зима 2018-2019 уже ждут тебя на нашем сайте!
+                    <br>
+                    <br>
+                    Скажи нашему менеджеру секретную кодовую фразу «Я люблю обувь!» (после оформления заказа) и получи
+                    скидку 15% на покупку новой пары*
+                    <br>
+                    <br>
+                    *скидка действует только на обувь из коллекции осень-зима 2018-2019 (модели по полной стоимости),
+                    срок действия секретной кодовой фразы с 1 по 8 августа.
+                </p>
+            </div>
+            <div class="row_items">
+                <img src="./img/baner_action.png" alt="Картинка" class="img_responsive">
+                <p class="text_header_action">101 туфелька от Modus Vivendi</p>
+                <p class="text_info_action">
+                    Условия очень простые - ты выставляешь в Instagram или<br>
+                    Facebook в альбоме «101 туфелька от Modus Vivendi»
+                    <br><br>
+                    свое самое лучшее фото в нашей обуви и получаешь скидку 200 грн на следующую покупку. Одно фото -
+                    одна скидка.
+                    <br><br>
+                    А у тебя, наверняка, много обуви Modus Vivendi.<br>
+                    Так чего же ты ждешь? Вперед за скидками!<br>
+                    *Скидка 200 грн за фото действует один раз на один заказ, при условии, что сумма заказа от 1000 грн.
+                </p>
+            </div>
+        </div>
+        <div class="feadback_action">
+            <div class="bottom_action_info">
+                <p class="text_header_action">Приглашаем вас зарегистрироваться на нашем сайте – это займет не больше
+                    минуты!</p>
+                <p class="text_header_action"> - Накопительные скидки:</p>
+                <p class="center_text_action">
+                    3% при накоплении 3000 грн<br>
+                    5% при накоплении 5000 грн<br>
+                    7% при накоплении 7000 грн<br>
+                    10% при накоплении 10000 грн!<br>
+                </p>
+                Сумма накопления не аннулируется со временем и едина для всех заказов с вашего аккаунта.<br>
+                Вы сможете делиться своей скидкой с родственниками и друзьями и… накапливать быстрее!
+                <p class="text_header_action"> - Информация об акциях и регулярных распродажах до 70% - в первую очередь
+                    вам!</p>
+                Вы первыми узнаете о скидках и специальных предложениях, а значит – первыми успеете совершить выгодную
+                покупку!
+                <p class="text_header_action">- Подарочные купоны к праздникам!</p>
+                И много других приятных сюрпризов от Modus Vivendi!
+            </div>
+        </div>
+    </div>
+</div>
+<%= _.template(require('./../includes/footer.html'))(data) %>

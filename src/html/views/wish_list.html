@@ -1,0 +1,77 @@
+<% var data = { title: "Cписок Желаний", author: "Modus" }; %>
+<%=_.template(require('./../includes/header.html'))(data) %>
+<div class="wrapper catalog wish_list">
+    <div class="l_container lookbook_container wish_list_container">
+        <h2 class="text_header_all">CПИСОК ЖЕЛАНИЙ</h2>
+        <div class="wish_list_info">
+            <div>
+                <div>
+                    <span class="wish_list_info_regestation">Зарегистрируйтесь</span> и сохраните избранные товары
+                    в своем личном кабинете
+                </div>
+            </div>
+            <div>
+                <div>Товары в списке желаний хранятся <span>10</span> дней</div>
+            </div>
+        </div>
+        <p class="top_text_personal">Категория</p>
+        <div class="container_items_buy container_category">
+            <div class="items_product_basket d_flex">
+                <div class="text_category"><a href="#">
+                        Кроссовки
+                    </a></div>
+                <div class="image_product_info">
+                    <img src="./img/product_image.png" alt="Картинка">
+                    <div class="text_title_product">
+                        <div>Белые кроссовки из натуральной
+                            кожи из Европы </div>
+                        <div>Артикул: <span> 562204</span></div>
+                        <div class="d_flex a_items_center">
+                            <div class="price_basket">
+                                Цена:<span>2 125 грн.</span>
+                            </div>
+                            <div> <a href="">Есть в наличии</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_product_my">
+                    <button class="all_button">Купить</button>
+                    <div class="conditions">
+                        <input type="checkbox" id="send_me_sale">
+                        <label for="send_me_sale">Уведомить о наличии</label>
+                    </div>
+                    <a href="#">Удалить</a>
+                </div>
+            </div>
+            <div class="items_product_basket d_flex">
+                <div class="text_category"><a href="#">
+                        Кроссовки
+                    </a></div>
+                <div class="image_product_info">
+                    <img src="./img/product_image.png" alt="Картинка">
+                    <div class="text_title_product">
+                        <div>Белые кроссовки из натуральной
+                            кожи из Европы </div>
+                        <div>Артикул: <span> 562204</span></div>
+                        <div class="d_flex a_items_center">
+                            <div class="price_basket">
+                                Цена:<span>2 125 грн.</span>
+                            </div>
+                            <div> <a href="">Есть в наличии</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_product_my">
+                    <button class="all_button">Купить</button>
+                    <div class="conditions">
+                        <input type="checkbox" id="send_me_sale">
+                        <label for="send_me_sale">Уведомить о наличии</label>
+                    </div>
+                    <a href="#">Удалить</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<%= _.template(require('./../includes/footer.html'))(data) %>
